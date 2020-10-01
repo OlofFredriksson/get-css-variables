@@ -1,0 +1,20 @@
+{
+  "name": "get-css-variables",
+  "version": "0.0.1",
+  "description": "Import CSS variables into a JavaScript Object",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo build",
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlofFredriksson/get-css-variables.git"
+  },
+  "author": "Olof",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OlofFredriksson/get-css-variables/issues"
+  },
+  "homepage": "https://github.com/OlofFredriksson/get-css-variables#readme"
+}
