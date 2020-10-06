@@ -25,7 +25,7 @@
     "lint:fix": "run-s eslint:fix prettier:write",
     "prettier:check": "prettier . --check",
     "prettier:write": "prettier . --write",
-    "test": ""
+    "test": "jest"
   },
   "husky": {
     "hooks": {
