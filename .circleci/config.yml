@@ -34,7 +34,6 @@ jobs:
                   paths: .
     deploy:
         <<: *defaults
-        context: NPM Token
         steps:
             - attach_workspace:
                   at: ~/repo
@@ -54,6 +53,7 @@ workflows:
                       tags:
                           only: /^v.*/
             - deploy:
+                  context: NPM Token
                   requires:
                       - test
                   filters:
