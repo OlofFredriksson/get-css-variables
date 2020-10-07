@@ -13,9 +13,7 @@
   "license": "MIT",
   "author": "Olof",
   "main": "dist/index.js",
-  "bin": {
-    "get-css-variables": "./bin/get-css-variables.js"
-  },
+  "bin": "./bin/get-css-variables.js",
   "files": [
     "src",
     "dist",
