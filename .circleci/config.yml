@@ -19,6 +19,7 @@ jobs:
 
             - run: npm install
             - run: npm run build
+            - run: npx sort-package-json -c
             - run: npm run lint
             - run:
                   name: Run tests
