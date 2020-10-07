@@ -30,7 +30,8 @@
     "lint:fix": "run-s eslint:fix prettier:write",
     "prettier:check": "prettier . --check",
     "prettier:write": "prettier . --write",
-    "test": "jest"
+    "test": "jest",
+    "postversion": "git push --follow-tags"
   },
   "husky": {
     "hooks": {
