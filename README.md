@@ -6,7 +6,7 @@
 
 ## Run CLI via npx
 
-`npx get-css-variables inputFile.txt output.js`
+`npx get-css-variables inputFile.css output.js`
 
 ## Usage
 
@@ -31,7 +31,7 @@ console.log(getVariables(":root { --dummy-color: blue }"));
 Will create an output file containing a exported javascript module.
 
 ```
-$ get-css-variables inputFile.txt output.js
+$ get-css-variables inputFile.css output.js
 ```
 
 ## Limits
