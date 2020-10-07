@@ -2,6 +2,9 @@
   "name": "get-css-variables",
   "version": "0.0.3",
   "description": "Import CSS variables into a JavaScript Object",
+  "keywords": [
+    "css"
+  ],
   "homepage": "https://github.com/OlofFredriksson/get-css-variables#readme",
   "bugs": {
     "url": "https://github.com/OlofFredriksson/get-css-variables/issues"
