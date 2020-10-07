@@ -4,9 +4,11 @@
 
 [![CircleCI](https://circleci.com/gh/OlofFredriksson/get-css-variables.svg?style=shield)](https://circleci.com/gh/OlofFredriksson/get-css-variables) [![npm](https://img.shields.io/npm/v/get-css-variables)](https://www.npmjs.com/package/get-css-variables)
 
-## Usage
+## Run CLI via npx
 
-`npm install --save-dev get-css-variables`
+`npx get-css-variables inputFile.txt output.js`
+
+## Usage
 
 ### Node Api
 
@@ -32,7 +34,7 @@ Will create an output file containing a exported javascript module.
 $ get-css-variables inputFile.txt output.js
 ```
 
-### Limits
+## Limits
 
 -   Only variables on the :root selector are supported.
 
