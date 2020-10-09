@@ -10,6 +10,8 @@
 
 ## Usage
 
+`npm install --save-dev get-css-variables`
+
 ### Node Api
 
 In your code
