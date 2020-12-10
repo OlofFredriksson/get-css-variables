@@ -2,7 +2,8 @@
 
 > Import CSS variables into a JavaScript Object
 
-[![CircleCI](https://circleci.com/gh/OlofFredriksson/get-css-variables.svg?style=shield)](https://circleci.com/gh/OlofFredriksson/get-css-variables) [![npm](https://img.shields.io/npm/v/get-css-variables)](https://www.npmjs.com/package/get-css-variables)
+[![Build](https://github.com/OlofFredriksson/get-css-variables/workflows/Build/badge.svg)](https://github.com/OlofFredriksson/get-css-variables/actions)
+[![npm](https://img.shields.io/npm/v/get-css-variables)](https://www.npmjs.com/package/get-css-variables)
 
 ## Run CLI via npx
 
