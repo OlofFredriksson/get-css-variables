@@ -18,7 +18,6 @@
   "main": "dist/index.js",
   "bin": "./bin/get-css-variables.js",
   "files": [
-    "src",
     "dist",
     "bin"
   ],
