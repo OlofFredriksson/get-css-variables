@@ -15,7 +15,7 @@
 
 ### Node Api
 
-In your code
+In your code:
 
 ```Javascript
 const { getVariables } = require("get-css-variables");
@@ -26,7 +26,7 @@ console.log(getVariables(":root { --dummy-color: blue }"));
 ### Output
 
 ```JSON
-{ '--dummy-color': 'blue' }
+{ "--dummy-color": "blue" }
 ```
 
 ### CLI
