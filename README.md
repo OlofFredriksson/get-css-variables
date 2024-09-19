@@ -1,6 +1,6 @@
-# get-css-variables
+# Get CSS variables
 
-> Import CSS variables into a JavaScript Object
+> Convert your CSS variables into a JavaScript Object
 
 [![Build](https://github.com/OlofFredriksson/get-css-variables/workflows/Build/badge.svg)](https://github.com/OlofFredriksson/get-css-variables/actions)
 [![npm](https://img.shields.io/npm/v/get-css-variables)](https://www.npmjs.com/package/get-css-variables)
@@ -15,7 +15,7 @@
 
 ### Node Api
 
-In your code:
+Convert css variables into a JSON object:
 
 ```Javascript
 const { getVariables } = require("get-css-variables");
