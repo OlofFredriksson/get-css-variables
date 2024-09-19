@@ -22,16 +22,16 @@ describe("getVariables", () => {
     test("File with variables and styling", () => {
         const cssFile = fs.readFileSync("./fixtures/dummy.css", "utf8");
         expect(getVariables(cssFile)).toMatchInlineSnapshot(`
-    Object {
-      "--body-font-size": "14px",
-      "--container-border": "rgb(170, 25, 25)",
-      "--container-color": "#ccc",
-      "--font-family": "Arial, Helvetica, sans-serif",
-      "--header-1-size": "calc(var(--body-font-size) * 2)",
-      "--header-2-size": "calc(var(--body-font-size) * 1.5)",
-      "--header-color": "rgb(68, 68, 163)",
-    }
-  `);
+            {
+              "--body-font-size": "14px",
+              "--container-border": "rgb(170, 25, 25)",
+              "--container-color": "#ccc",
+              "--font-family": "Arial, Helvetica, sans-serif",
+              "--header-1-size": "calc(var(--body-font-size) * 2)",
+              "--header-2-size": "calc(var(--body-font-size) * 1.5)",
+              "--header-color": "rgb(68, 68, 163)",
+            }
+        `);
     });
 });
 
