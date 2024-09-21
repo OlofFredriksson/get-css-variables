@@ -1,14 +1,14 @@
-import { getVariables, moduleReturnVariables } from "./index";
 import fs from "fs";
+import { getVariables, moduleReturnVariables } from "./index";
 
 describe("getVariables", () => {
-    test("Simple test with singular variable", () => {
+    it("Simple test with singular variable", () => {
         expect(getVariables(":root { --main-color: blue }")).toMatchObject({
             "--main-color": "blue",
         });
     });
 
-    test("Simple test with multiple variables", () => {
+    it("Simple test with multiple variables", () => {
         expect(
             getVariables(
                 ":root { --main-color: blue; --secondary-color: green }"
@@ -19,7 +19,7 @@ describe("getVariables", () => {
         });
     });
 
-    test("File with variables and styling", () => {
+    it("File with variables and styling", () => {
         const cssFile = fs.readFileSync("./fixtures/dummy.css", "utf8");
         expect(getVariables(cssFile)).toMatchInlineSnapshot(`
             {
@@ -36,7 +36,7 @@ describe("getVariables", () => {
 });
 
 describe("moduleReturnVariables", () => {
-    test("should return object in exported module", () => {
+    it("should return object in exported module", () => {
         expect(moduleReturnVariables(":root { --main-color: blue }")).toBe(
             'module.exports = {"--main-color":"blue"}'
         );

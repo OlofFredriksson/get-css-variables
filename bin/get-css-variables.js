@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 // Use compiled version, so if file is missing, run build first
-const { moduleReturnVariables } = require("../dist/index");
 const fs = require("fs");
+const { moduleReturnVariables } = require("../dist/index");
+
 const args = process.argv.slice(2);
 
 const inputFile = args[0];
