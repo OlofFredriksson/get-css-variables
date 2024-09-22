@@ -43,7 +43,7 @@
     "package.json": "npx sort-package-json -c"
   },
   "dependencies": {
-    "css": "^3.0.0"
+    "@adobe/css-tools": "^4.4.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.25.6",

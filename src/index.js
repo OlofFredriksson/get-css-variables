@@ -1,4 +1,4 @@
-const css = require("css");
+const css = require("@adobe/css-tools");
 
 /**
  * @param {*} String CSS source
