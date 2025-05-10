@@ -27,11 +27,11 @@
     "eslint:fix": "eslint . --fix",
     "lint": "run-s eslint prettier:check",
     "lint:fix": "run-s eslint:fix prettier:write",
+    "prepare": "husky",
     "prettier:check": "prettier . --check",
     "prettier:write": "prettier . --write",
     "test": "jest",
-    "postversion": "git push --follow-tags",
-    "prepare": "husky"
+    "postversion": "git push --follow-tags"
   },
   "lint-staged": {
     "*.js": "eslint --fix",
