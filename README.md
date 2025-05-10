@@ -39,7 +39,7 @@ $ get-css-variables inputFile.css output.js
 
 ## Limits
 
--   Only variables on the :root selector are supported.
+- Only variables on the :root selector are supported.
 
 ## Development
 
@@ -51,6 +51,6 @@ $ npm test
 
 ## Note
 
--   Original code and credit to [Dashlane/css-variables-loader](https://github.com/Dashlane/css-variables-loader)
-    Reason for this plugin was to remove Webpack depedency and add CLI tool.
--   One use case for this plugin is together with [dvitamin/postcss-var-func-fallback](https://github.com/dvitamin/postcss-var-func-fallback).
+- Original code and credit to [Dashlane/css-variables-loader](https://github.com/Dashlane/css-variables-loader)
+  Reason for this plugin was to remove Webpack depedency and add CLI tool.
+- One use case for this plugin is together with [dvitamin/postcss-var-func-fallback](https://github.com/dvitamin/postcss-var-func-fallback).

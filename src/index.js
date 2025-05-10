@@ -9,16 +9,16 @@ export function getVariables(source) {
     css.parse(source)
         .stylesheet.rules.filter(
             (rule) =>
-                rule.selectors && rule.selectors.some((sel) => sel === ":root")
+                rule.selectors && rule.selectors.some((sel) => sel === ":root"),
         )
         .forEach((rule) =>
             rule.declarations
                 .filter(
                     (decl) =>
                         decl.type === "declaration" &&
-                        decl.property.indexOf("--") === 0
+                        decl.property.indexOf("--") === 0,
                 )
-                .forEach((decl) => (result[decl.property] = decl.value))
+                .forEach((decl) => (result[decl.property] = decl.value)),
         );
     return result;
 }

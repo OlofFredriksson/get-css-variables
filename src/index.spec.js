@@ -11,8 +11,8 @@ describe("getVariables", () => {
     it("Simple test with multiple variables", () => {
         expect(
             getVariables(
-                ":root { --main-color: blue; --secondary-color: green }"
-            )
+                ":root { --main-color: blue; --secondary-color: green }",
+            ),
         ).toMatchObject({
             "--main-color": "blue",
             "--secondary-color": "green",
@@ -38,7 +38,7 @@ describe("getVariables", () => {
 describe("moduleReturnVariables", () => {
     it("should return object in exported module", () => {
         expect(moduleReturnVariables(":root { --main-color: blue }")).toBe(
-            'module.exports = {"--main-color":"blue"}'
+            'module.exports = {"--main-color":"blue"}',
         );
     });
 });
