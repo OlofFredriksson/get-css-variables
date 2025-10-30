@@ -1,4 +1,4 @@
-const css = require("@adobe/css-tools");
+import { parse } from "@adobe/css-tools";
 
 /**
  * @param {import("@adobe/css-tools").CssAtRuleAST} rule
@@ -30,7 +30,7 @@ function entry(decl) {
  * @returns {Record<string, string>} Js object with variables
  */
 export function getVariables(source) {
-    const { stylesheet } = css.parse(source);
+    const { stylesheet } = parse(source);
     const rules = stylesheet.rules.filter(isRootRule);
     const variables = rules.map((rule) => {
         return rule.declarations.filter(isVariableDeclaration).map(entry);
