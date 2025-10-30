@@ -22,7 +22,9 @@
     "bin"
   ],
   "scripts": {
+    "prebuild": "tsc",
     "build": "babel src/index.js --out-file dist/index.js",
+    "postbuild": "dts-bundle-generator -o dist/index.d.ts temp/types/index.d.ts",
     "eslint": "eslint .",
     "eslint:fix": "eslint . --fix",
     "lint": "run-s eslint prettier:check",
@@ -50,11 +52,15 @@
     "@forsakringskassan/eslint-config-cli": "^11.4.0",
     "@forsakringskassan/eslint-config-jest": "^11.4.1",
     "@forsakringskassan/prettier-config": "^3.0.5",
+    "@tsconfig/node20": "20.1.6",
+    "@types/node": "20.19.24",
     "babel-jest": "^29.7.0",
+    "dts-bundle-generator": "9.5.1",
     "husky": "^9.1.6",
     "jest": "^29.7.0",
     "lint-staged": "^15.0.0",
-    "npm-run-all2": "^7.0.0"
+    "npm-run-all2": "^7.0.0",
+    "typescript": "5.9.3"
   },
   "engines": {
     "node": ">= 20.0.0",
