@@ -23,3 +23,14 @@ jobs:
             - run: npm test
               env:
                   CI: true
+
+    npm-pkg-lint:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+            - name: Setup Node.js
+              uses: actions/setup-node@v4
+            - run: npm install
+            - name: npm-pkg-lint
+              uses: ext/npm-pkg-lint@master

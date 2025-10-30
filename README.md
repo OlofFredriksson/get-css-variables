@@ -17,6 +17,16 @@
 
 Convert css variables into a JSON object:
 
+#### ESM
+
+```Javascript
+import { getVariables } from "get-css-variables";
+
+console.log(getVariables(":root { --dummy-color: blue }"));
+```
+
+#### CJS (Deprecated)
+
 ```Javascript
 const { getVariables } = require("get-css-variables");
 

@@ -3,17 +3,24 @@ import { getVariables, moduleReturnVariables } from "./index";
 
 describe("getVariables", () => {
     it("Simple test with singular variable", () => {
-        expect(getVariables(":root { --main-color: blue }")).toMatchObject({
+        const source = ":root { --main-color: blue }";
+        expect(getVariables(source)).toMatchObject({
             "--main-color": "blue",
         });
     });
 
     it("Simple test with multiple variables", () => {
-        expect(
-            getVariables(
-                ":root { --main-color: blue; --secondary-color: green }",
-            ),
-        ).toMatchObject({
+        const source = ":root { --main-color: blue; --secondary-color: green }";
+        expect(getVariables(source)).toMatchObject({
+            "--main-color": "blue",
+            "--secondary-color": "green",
+        });
+    });
+
+    it("Simple test with multiple selectors", () => {
+        const source =
+            ":root { --main-color: blue; }\n:root {--secondary-color: green }";
+        expect(getVariables(source)).toMatchObject({
             "--main-color": "blue",
             "--secondary-color": "green",
         });
@@ -36,9 +43,22 @@ describe("getVariables", () => {
 });
 
 describe("moduleReturnVariables", () => {
-    it("should return object in exported module", () => {
-        expect(moduleReturnVariables(":root { --main-color: blue }")).toBe(
-            'module.exports = {"--main-color":"blue"}',
+    const source = ":root { --main-color: blue }";
+
+    it("should return object in cjs format", () => {
+        expect(moduleReturnVariables(source, "cjs")).toBe(
+            'const value = {"--main-color":"blue"}\nmodule.exports = value;\n',
+        );
+    });
+
+    it("should return object in esm format", () => {
+        expect(moduleReturnVariables(source, "esm")).toBe(
+            'const value = {"--main-color":"blue"}\nexport default value;\n',
+        );
+    });
+    it("should return object in cjs by default", () => {
+        expect(moduleReturnVariables(source)).toBe(
+            'const value = {"--main-color":"blue"}\nmodule.exports = value;\n',
         );
     });
 });
