@@ -41,8 +41,14 @@ export function getVariables(source) {
 /**
  * @public
  * @param {string} source - CSS source
- * @returns {string} Stringified object surounded with module.exports
+ * @param {"esm" | "cjs"} [format] - Module output format, default is `"cjs"`.
+ * @returns {string} Stringified object surrounded with module.exports
  */
-export function moduleReturnVariables(source) {
-    return `module.exports = ${JSON.stringify(getVariables(source))}`;
+export function moduleReturnVariables(source, format) {
+    const value = `const value = ${JSON.stringify(getVariables(source))}`;
+    if (format === "esm") {
+        return `${value}\nexport default value;\n`;
+    } else {
+        return `${value}\nmodule.exports = value;\n`;
+    }
 }
