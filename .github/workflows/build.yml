@@ -13,7 +13,7 @@ jobs:
         steps:
             - uses: actions/checkout@v4
             - name: Use Node.js ${{ matrix.node-version }}
-              uses: actions/setup-node@v4
+              uses: actions/setup-node@v6
               with:
                   node-version: ${{ matrix.node-version }}
             - run: npm install
@@ -30,7 +30,7 @@ jobs:
             - name: Checkout
               uses: actions/checkout@v4
             - name: Setup Node.js
-              uses: actions/setup-node@v4
+              uses: actions/setup-node@v6
             - run: npm install
             - name: npm-pkg-lint
               uses: ext/npm-pkg-lint@master
