@@ -58,7 +58,7 @@
     "@adobe/css-tools": "^4.4.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.25.2",
+    "@babel/core": "^7.28.5",
     "@babel/preset-env": "^7.25.4",
     "@forsakringskassan/eslint-config": "^11.4.0",
     "@forsakringskassan/eslint-config-cli": "^11.4.0",
