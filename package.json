@@ -40,7 +40,6 @@
     "lint:fix": "run-s eslint:fix prettier:write",
     "prepack": "release-prepack --bundle",
     "postpack": "release-postpack",
-    "prepare": "husky",
     "prepublishOnly": "release-prepublish --bundle",
     "prettier:check": "prettier . --check",
     "prettier:write": "prettier . --write",
