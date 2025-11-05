@@ -48,6 +48,9 @@
     "test": "jest",
     "postversion": "git push --follow-tags"
   },
+  "commitlint": {
+    "extends": "@forsakringskassan/commitlint-config/no-jira"
+  },
   "lint-staged": {
     "*.js": "eslint --fix",
     "*.{js,json,md,css}": "prettier --write",
@@ -79,8 +82,5 @@
   "engines": {
     "node": ">= 20.0.0",
     "npm": ">= 10.0.0"
-  },
-  "commitlint": {
-    "extends": "@forsakringskassan/commitlint-config/no-jira"
   }
 }
