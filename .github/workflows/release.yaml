@@ -6,6 +6,9 @@ on:
                 description: "npm version (patch/minor/major)"
                 required: true
                 default: ""
+permissions:
+    id-token: write
+    contents: write
 jobs:
     release:
         runs-on: ubuntu-latest
@@ -19,9 +22,8 @@ jobs:
             - run: npm run build
             - name: Release
               run: |
+                  npm install -g npm@latest
                   git config --local user.email "action@github.com"
                   git config --local user.name "GitHub Action"
                   npm version "${{ github.event.inputs.version }}"
                   npm publish
-              env:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
