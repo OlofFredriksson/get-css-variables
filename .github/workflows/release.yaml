@@ -6,6 +6,9 @@ on:
                 description: "npm version (patch/minor/major)"
                 required: true
                 default: ""
+permissions:
+    contents: "read"
+    id-token: "write"
 jobs:
     release:
         runs-on: ubuntu-latest
