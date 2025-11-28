@@ -51,11 +51,6 @@
   "commitlint": {
     "extends": "@forsakringskassan/commitlint-config/no-jira"
   },
-  "lint-staged": {
-    "*.js": "eslint --fix",
-    "*.{js,json,md,css}": "prettier --write",
-    "package.json": "npx sort-package-json -c"
-  },
   "prettier": "@forsakringskassan/prettier-config",
   "dependencies": {
     "@adobe/css-tools": "^4.4.0"
