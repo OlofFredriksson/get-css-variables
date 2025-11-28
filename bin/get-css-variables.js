@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* eslint-disable no-console -- console allowed */
 // Use compiled version, so if file is missing, run build first
 const fs = require("fs");
 const { moduleReturnVariables } = require("../dist/index");

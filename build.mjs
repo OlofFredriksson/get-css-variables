@@ -1,5 +1,5 @@
 import fs from "node:fs/promises";
-import { build, analyzeMetafile } from "esbuild";
+import { analyzeMetafile, build } from "esbuild";
 
 const extension = {
     cjs: ".cjs",
