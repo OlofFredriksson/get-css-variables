@@ -62,7 +62,7 @@
     "@forsakringskassan/eslint-config-jest": "13.2.3",
     "@forsakringskassan/prettier-config": "3.2.0",
     "@html-validate/release-scripts": "7.1.0",
-    "@tsconfig/node20": "20.1.6",
+    "@tsconfig/node20": "20.1.8",
     "@types/node": "20.19.24",
     "dts-bundle-generator": "9.5.1",
     "esbuild": "0.27.0",
