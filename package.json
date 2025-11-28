@@ -2,6 +2,7 @@
   "name": "get-css-variables",
   "version": "1.1.0",
   "description": "Import CSS variables into a JavaScript Object",
+  "type": "module",
   "keywords": [
     "css"
   ],
@@ -44,7 +45,7 @@
     "prettier:check": "prettier . --check",
     "prettier:write": "prettier . --write",
     "postpublish": "release-postpublish",
-    "test": "jest",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "postversion": "git push --follow-tags"
   },
   "commitlint": {
@@ -60,8 +61,6 @@
     "@adobe/css-tools": "^4.4.0"
   },
   "devDependencies": {
-    "@babel/core": "7.28.5",
-    "@babel/preset-env": "7.28.5",
     "@forsakringskassan/commitlint-config": "3.2.1",
     "@forsakringskassan/eslint-config": "13.2.2",
     "@forsakringskassan/eslint-config-cli": "13.2.0",
@@ -70,7 +69,6 @@
     "@html-validate/release-scripts": "7.1.0",
     "@tsconfig/node20": "20.1.6",
     "@types/node": "20.19.24",
-    "babel-jest": "30.2.0",
     "dts-bundle-generator": "9.5.1",
     "esbuild": "0.27.0",
     "jest": "30.2.0",
