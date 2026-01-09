@@ -59,7 +59,7 @@
     "@forsakringskassan/commitlint-config": "3.3.2",
     "@forsakringskassan/eslint-config": "13.2.6",
     "@forsakringskassan/eslint-config-cli": "13.2.0",
-    "@forsakringskassan/eslint-config-jest": "13.2.8",
+    "@forsakringskassan/eslint-config-jest": "13.2.9",
     "@forsakringskassan/prettier-config": "3.3.2",
     "@html-validate/release-scripts": "7.1.0",
     "@tsconfig/node20": "20.1.8",
