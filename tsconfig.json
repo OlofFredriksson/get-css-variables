@@ -4,9 +4,8 @@
         "emitDeclarationOnly": true,
         "declaration": true,
         "declarationDir": "temp/types",
-        "allowJs": true,
-        "checkJs": true
+        "types": ["jest", "node"]
     },
-    "include": ["src/**/*.js"],
-    "exclude": ["src/**/*.spec.js"]
+    "include": ["src/**/*.ts"],
+    "exclude": ["src/**/*.spec.ts"]
 }
