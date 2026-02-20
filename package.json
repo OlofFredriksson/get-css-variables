@@ -57,9 +57,9 @@
   },
   "devDependencies": {
     "@forsakringskassan/commitlint-config": "3.3.3",
-    "@forsakringskassan/eslint-config": "13.3.2",
+    "@forsakringskassan/eslint-config": "13.3.5",
     "@forsakringskassan/eslint-config-cli": "13.3.2",
-    "@forsakringskassan/eslint-config-jest": "13.3.4",
+    "@forsakringskassan/eslint-config-jest": "13.3.5",
     "@forsakringskassan/prettier-config": "3.3.4",
     "@html-validate/release-scripts": "7.1.0",
     "@tsconfig/node20": "20.1.9",
