@@ -52,6 +52,9 @@
     "extends": "@forsakringskassan/commitlint-config/no-jira"
   },
   "prettier": "@forsakringskassan/prettier-config",
+  "release": {
+    "extends": "@forsakringskassan/semantic-release-config"
+  },
   "dependencies": {
     "@adobe/css-tools": "^4.4.0"
   },

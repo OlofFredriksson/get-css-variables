@@ -1,11 +1,6 @@
 name: Release
 on:
     workflow_dispatch:
-        inputs:
-            version:
-                description: "npm version (patch/minor/major)"
-                required: true
-                default: ""
 permissions:
     id-token: write
     contents: write
@@ -21,9 +16,10 @@ jobs:
             - run: npm ci
             - run: npm run build
             - name: Release
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               run: |
                   npm install -g npm@latest
-                  git config --local user.email "action@github.com"
-                  git config --local user.name "GitHub Action"
-                  npm version "${{ github.event.inputs.version }}"
-                  npm publish
+                  npm config set access public
+                  npm install --no-save "@forsakringskassan/semantic-release-config"
+                  npm exec semantic-release
