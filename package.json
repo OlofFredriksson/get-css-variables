@@ -63,7 +63,7 @@
     "@forsakringskassan/eslint-config": "13.4.0",
     "@forsakringskassan/eslint-config-cli": "13.4.0",
     "@forsakringskassan/eslint-config-jest": "13.4.0",
-    "@forsakringskassan/prettier-config": "3.3.4",
+    "@forsakringskassan/prettier-config": "3.3.5",
     "@html-validate/release-scripts": "7.1.0",
     "@tsconfig/node20": "20.1.9",
     "@types/node": "20.19.33",
