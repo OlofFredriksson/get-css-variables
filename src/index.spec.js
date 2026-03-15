@@ -1,4 +1,4 @@
-import fs from "fs";
+import fs from "node:fs";
 import { getVariables, moduleReturnVariables } from "./index";
 
 describe("getVariables", () => {
