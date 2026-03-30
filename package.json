@@ -72,7 +72,7 @@
     "jest": "30.3.0",
     "npm-pkg-lint": "4.6.2",
     "npm-run-all2": "8.0.4",
-    "typescript": "5.9.3"
+    "typescript": "6.0.2"
   },
   "engines": {
     "node": ">= 20.0.0",
