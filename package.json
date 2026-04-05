@@ -68,7 +68,7 @@
     "@tsconfig/node20": "20.1.9",
     "@types/node": "20.19.37",
     "dts-bundle-generator": "9.5.1",
-    "esbuild": "0.27.5",
+    "esbuild": "0.28.0",
     "jest": "30.3.0",
     "npm-pkg-lint": "4.6.3",
     "npm-run-all2": "8.0.4",
