@@ -64,7 +64,7 @@
     "@forsakringskassan/eslint-config-cli": "14.1.0",
     "@forsakringskassan/eslint-config-jest": "14.1.0",
     "@forsakringskassan/prettier-config": "3.3.6",
-    "@html-validate/release-scripts": "7.1.15",
+    "@html-validate/release-scripts": "7.1.19",
     "@tsconfig/node20": "20.1.9",
     "@types/node": "20.19.37",
     "dts-bundle-generator": "9.5.1",
