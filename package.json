@@ -45,7 +45,7 @@
     "prettier:check": "prettier . --check",
     "prettier:write": "prettier . --write",
     "postpublish": "release-postpublish",
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test": "node --test 'src/**/*.spec.js'",
     "postversion": "git push --follow-tags"
   },
   "commitlint": {
@@ -62,14 +62,12 @@
     "@forsakringskassan/commitlint-config": "3.3.10",
     "@forsakringskassan/eslint-config": "14.1.2",
     "@forsakringskassan/eslint-config-cli": "14.1.0",
-    "@forsakringskassan/eslint-config-jest": "14.1.0",
     "@forsakringskassan/prettier-config": "3.3.6",
     "@html-validate/release-scripts": "7.1.19",
     "@tsconfig/node20": "20.1.9",
     "@types/node": "20.19.39",
     "dts-bundle-generator": "9.5.1",
     "esbuild": "0.28.0",
-    "jest": "30.3.0",
     "npm-pkg-lint": "4.6.4",
     "npm-run-all2": "8.0.4",
     "typescript": "5.9.3"

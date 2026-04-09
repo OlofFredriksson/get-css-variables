@@ -1,6 +1,5 @@
 import defaultConfig from "@forsakringskassan/eslint-config";
 import cliConfig from "@forsakringskassan/eslint-config-cli";
-import jestConfig from "@forsakringskassan/eslint-config-jest";
 
 export default [
     {
@@ -17,5 +16,4 @@ export default [
 
     ...defaultConfig,
     cliConfig(),
-    jestConfig(),
 ];
