@@ -4,6 +4,7 @@
         "emitDeclarationOnly": true,
         "declaration": true,
         "declarationDir": "temp/types",
+        "rootDir": "src/",
         "allowJs": true,
         "checkJs": true
     },
