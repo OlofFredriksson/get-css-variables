@@ -1,7 +1,7 @@
-/* eslint-disable import/extensions -- imported by node native */
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import { describe, it } from "node:test";
+// eslint-disable-next-line import-x/extensions -- Node Native
 import { getVariables, moduleReturnVariables } from "./index.js";
 
 describe("getVariables", () => {
