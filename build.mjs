@@ -15,7 +15,7 @@ for (const format of ["cjs", "esm"]) {
         bundle: true,
         format,
         platform: "node",
-        target: "node20",
+        target: "node22",
         logLevel: "info",
         metafile: true,
         outExtension: {
