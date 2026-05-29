@@ -62,7 +62,7 @@
     "@forsakringskassan/commitlint-config": "3.6.4",
     "@forsakringskassan/eslint-config": "15.0.0",
     "@forsakringskassan/eslint-config-cli": "15.0.0",
-    "@forsakringskassan/prettier-config": "3.5.0",
+    "@forsakringskassan/prettier-config": "3.6.0",
     "@html-validate/release-scripts": "7.2.3",
     "@tsconfig/node22": "22.0.5",
     "@types/node": "22.19.19",
