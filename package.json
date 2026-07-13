@@ -63,7 +63,7 @@
     "@forsakringskassan/eslint-config": "15.2.0",
     "@forsakringskassan/eslint-config-cli": "15.2.0",
     "@forsakringskassan/prettier-config": "3.7.7",
-    "@html-validate/release-scripts": "7.3.1",
+    "@html-validate/release-scripts": "7.3.6",
     "@tsconfig/node22": "22.0.5",
     "@types/node": "22.20.1",
     "dts-bundle-generator": "9.5.1",
