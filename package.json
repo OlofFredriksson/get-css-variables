@@ -60,8 +60,8 @@
   },
   "devDependencies": {
     "@forsakringskassan/commitlint-config": "3.6.9",
-    "@forsakringskassan/eslint-config": "15.2.0",
-    "@forsakringskassan/eslint-config-cli": "15.2.0",
+    "@forsakringskassan/eslint-config": "15.3.13",
+    "@forsakringskassan/eslint-config-cli": "15.3.0",
     "@forsakringskassan/prettier-config": "3.7.7",
     "@html-validate/release-scripts": "7.3.6",
     "@tsconfig/node22": "22.0.5",
