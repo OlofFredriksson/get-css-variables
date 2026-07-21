@@ -65,7 +65,7 @@
     "@forsakringskassan/prettier-config": "3.7.7",
     "@html-validate/release-scripts": "7.3.6",
     "@tsconfig/node22": "22.0.5",
-    "@types/node": "22.20.1",
+    "@types/node": "24.13.3",
     "dts-bundle-generator": "9.5.1",
     "esbuild": "0.28.1",
     "npm-pkg-lint": "5.2.0",
