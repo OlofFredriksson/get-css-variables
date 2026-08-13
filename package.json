@@ -60,7 +60,7 @@
   },
   "devDependencies": {
     "@forsakringskassan/commitlint-config": "3.6.9",
-    "@forsakringskassan/eslint-config": "15.8.0",
+    "@forsakringskassan/eslint-config": "15.8.2",
     "@forsakringskassan/eslint-config-cli": "15.8.1",
     "@forsakringskassan/prettier-config": "3.7.8",
     "@html-validate/release-scripts": "7.6.0",
