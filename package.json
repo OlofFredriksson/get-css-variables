@@ -41,6 +41,7 @@
     "lint:fix": "run-s eslint:fix prettier:write",
     "prepack": "release-prepack --bundle",
     "postpack": "release-postpack",
+    "prepare": "commitlint-config",
     "prepublishOnly": "release-prepublish --bundle",
     "prettier:check": "prettier . --check",
     "prettier:write": "prettier . --write",
@@ -59,7 +60,7 @@
     "@adobe/css-tools": "^4.4.0"
   },
   "devDependencies": {
-    "@forsakringskassan/commitlint-config": "3.6.9",
+    "@forsakringskassan/commitlint-config": "4.2.8",
     "@forsakringskassan/eslint-config": "15.9.10",
     "@forsakringskassan/eslint-config-cli": "15.9.3",
     "@forsakringskassan/prettier-config": "3.7.8",
@@ -75,5 +76,9 @@
   "engines": {
     "node": ">= 22.0.0",
     "npm": ">= 11.0.0"
+  },
+  "allowScripts": {
+    "esbuild": true,
+    "unrs-resolver": true
   }
 }
