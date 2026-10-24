@@ -33,4 +33,4 @@ jobs:
               uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
             - run: npm install
             - name: npm-pkg-lint
-              uses: ext/npm-pkg-lint@main
+              uses: ext/npm-pkg-lint@a290765c49344a1542002a7eec9334f6c0aba406 # main
