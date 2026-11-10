@@ -57,7 +57,7 @@
     "extends": "@forsakringskassan/semantic-release-config"
   },
   "dependencies": {
-    "@adobe/css-tools": "^4.4.0"
+    "@adobe/css-tools": "^5.0.0"
   },
   "devDependencies": {
     "@forsakringskassan/commitlint-config": "4.2.8",
