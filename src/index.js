@@ -9,7 +9,7 @@ function isRootRule(rule) {
 }
 
 /**
- * @param {import("@adobe/css-tools").CssCommentAST | import("@adobe/css-tools").CssDeclarationAST} decl
+ * @param {import("@adobe/css-tools").CssAtRuleAST | import("@adobe/css-tools").CssCommentAST | import("@adobe/css-tools").CssDeclarationAST} decl
  * @returns {decl is import("@adobe/css-tools").CssDeclarationAST}
  */
 function isVariableDeclaration(decl) {
