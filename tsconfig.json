@@ -5,9 +5,7 @@
         "declaration": true,
         "declarationDir": "temp/types",
         "rootDir": "src/",
-        "allowJs": true,
-        "checkJs": true
+        "allowImportingTsExtensions": true
     },
-    "include": ["src/**/*.js"],
-    "exclude": ["src/**/*.spec.js"]
+    "include": ["src/**/*.ts"]
 }

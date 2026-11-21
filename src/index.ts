@@ -1,26 +1,22 @@
 import { parse } from "@adobe/css-tools";
+import type {
+    CssAtRuleAST,
+    CssCommentAST,
+    CssDeclarationAST,
+    CssRuleAST,
+} from "@adobe/css-tools";
 
-/**
- * @param {import("@adobe/css-tools").CssAtRuleAST} rule
- * @returns {rule is import("@adobe/css-tools").CssRuleAST}
- */
-function isRootRule(rule) {
+function isRootRule(rule: CssAtRuleAST): rule is CssRuleAST {
     return rule.type === "rule" && rule.selectors.includes(":root");
 }
 
-/**
- * @param {import("@adobe/css-tools").CssAtRuleAST | import("@adobe/css-tools").CssCommentAST | import("@adobe/css-tools").CssDeclarationAST} decl
- * @returns {decl is import("@adobe/css-tools").CssDeclarationAST}
- */
-function isVariableDeclaration(decl) {
+function isVariableDeclaration(
+    decl: CssAtRuleAST | CssCommentAST | CssDeclarationAST,
+): decl is CssDeclarationAST {
     return decl.type === "declaration" && decl.property.startsWith("--");
 }
 
-/**
- * @param {import("@adobe/css-tools").CssDeclarationAST} decl
- * @returns {[key: string, value: string]}
- */
-function entry(decl) {
+function entry(decl: CssDeclarationAST): [key: string, value: string] {
     return [decl.property, decl.value];
 }
 
@@ -29,7 +25,7 @@ function entry(decl) {
  * @param {string} source - CSS source
  * @returns {Record<string, string>} Js object with variables
  */
-export function getVariables(source) {
+export function getVariables(source: string): Record<string, string> {
     const { stylesheet } = parse(source);
     const rules = stylesheet.rules.filter(isRootRule);
     const variables = rules.map((rule) => {
@@ -44,7 +40,10 @@ export function getVariables(source) {
  * @param {"esm" | "cjs"} [format] - Module output format, default is `"cjs"`.
  * @returns {string} Stringified object surrounded with module.exports
  */
-export function moduleReturnVariables(source, format) {
+export function moduleReturnVariables(
+    source: string,
+    format?: "esm" | "cjs",
+): string {
     const value = `const value = ${JSON.stringify(getVariables(source))}`;
     if (format === "esm") {
         return `${value}\nexport default value;\n`;

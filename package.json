@@ -46,7 +46,7 @@
     "prettier:check": "prettier . --check",
     "prettier:write": "prettier . --write",
     "postpublish": "release-postpublish",
-    "test": "node --test 'src/**/*.spec.js'",
+    "test": "node --test 'src/**/*.spec.ts'",
     "postversion": "git push --follow-tags"
   },
   "allowScripts": {
@@ -78,7 +78,7 @@
     "typescript": "6.0.3"
   },
   "engines": {
-    "node": ">= 22.0.0",
+    "node": ">= 22.16.0",
     "npm": ">= 11.0.0"
   }
 }

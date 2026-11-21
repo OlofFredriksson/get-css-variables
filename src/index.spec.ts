@@ -1,8 +1,7 @@
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import { describe, it } from "node:test";
-// eslint-disable-next-line import-x/extensions -- Node Native
-import { getVariables, moduleReturnVariables } from "./index.js";
+import { getVariables, moduleReturnVariables } from "./index.ts";
 
 describe("getVariables", () => {
     it("Simple test with singular variable", () => {
